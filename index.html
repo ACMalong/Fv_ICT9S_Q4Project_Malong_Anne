@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>[4thQ]Project</title>
+	<style type="text/css">
+
+			body{
+				background-color: #201F66;
+			}
+			#login-container {
+				width:500px;
+				border: 1px solid white;
+				background-color:white;
+				padding: 5px;
+				margin: 20px; 
+				height: 600px;
+			}
+			#pfp {
+				width:225px;
+			}
+			Body{
+				background-image: url("https://i.pinimg.com/originals/3f/16/5f/3f165f7dce4b611f3e379c826af924ca.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-color: #ffe6ff;
+				font-family: Monaco;
+				font-size: 30px;	
+			}
+			#login-container{
+				width:500px;
+				border: 1px solid white;
+				background-color:white;
+				padding: 5px;
+				margin: 20px; 
+				height: 600px;;
+			}
+			#email, #pass{
+				border: 8px solid #AC98FA;
+			}
+
+			.container{
+				display: flex;
+				text-align: center;
+			}
+	</style>
+</head>
+<body>
+<center>
+	<div id="login-container">
+		<div class="col-md-10">
+			<br>
+			<span>LOGIN TO ONLINE PORTFOLIO</span>
+			<br>
+			<img id="pfp" class="rounded-circle"src="https://i.pinimg.com/originals/e3/c9/a9/e3c9a9e5934d65cff25d83a2ac655230.jpg">
+
+		<form action="mainpage.html" class="form-group">
+			<br>
+			<input type="text" class="form-control bg-light" name="email" id="email" placeholder="Email">
+			<input type="text" class="form-control bg-light" name="password" id="pass" placeholder="Password">
+
+			<a href="mainpage.html"><button class="btn btn-primary">Login</button></a>
+			<a href="#"><button type="reset" class="btn btn-danger">Cancel</button></a>
+
+		</form>
+		</div>
+	</div>	
+</center>
+	<script type="text/javascript">
+		
+		document.getElementById('email').innerHTML = "Email: ";
+		document.getElementById('pass').innerHTML = "Password: ";
+	</script>
+</body>
+</html>
